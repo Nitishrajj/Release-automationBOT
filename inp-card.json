@@ -1,0 +1,121 @@
+{
+    "type": "AdaptiveCard",
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.3",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "Create Folder Release",
+            "wrap": true,
+            "size": "Medium",
+            "weight": "Bolder"
+        },
+        {
+            "type": "TextBlock",
+            "text": "Enter name of the folder:",
+            "wrap": true
+        },
+        {
+            "type": "Input.Text",
+            "placeholder": "Release",
+            "id": "name"
+        },
+        {
+            "type": "TextBlock",
+            "text": "eg: Release X14.2.6(Release version)",
+            "wrap": true
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "Create folder",
+                    "style": "positive",
+                    "data": {
+                        "callback_keyword": "release_folder"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "TextBlock",
+            "text": "Download Files into remote server",
+            "wrap": true,
+            "size": "Medium",
+            "weight": "Bolder"
+        },
+        {
+            "type": "TextBlock",
+            "text": "Enter release URL :",
+            "wrap": true
+        },
+        {
+            "type": "Input.Text",
+            "placeholder": "release/url",
+            "id": "url_R"
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "Download files",
+                    "style": "positive",
+                    "data": {
+                        "callback_keyword": "download_files"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "TextBlock",
+            "text": "eg: http://ruscfs2.rusclabs.cisco.com/filestore/Mirror/ttg-lys-fs1/SWPackages/Beta/Oak/X14.2.6/RC1/",
+            "wrap": true
+        },
+        {
+            "type": "TextBlock",
+            "text": "Execute the Final Release.py command",
+            "wrap": true,
+            "size": "Medium",
+            "weight": "Bolder"
+        },
+        {
+            "type": "TextBlock",
+            "text": "    (Changing name of files to  _ec)",
+            "wrap": true
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "Execute command",
+                    "style": "positive",
+                    "data": {
+                        "callback_keyword": "exec"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "TextBlock",
+            "text": "Push files to final folder and list them. ",
+            "wrap": true,
+            "size": "Medium",
+            "weight": "Bolder"
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "Push to final",
+                    "style": "positive",
+                    "data": {
+                        "callback_keyword": "pushfilestofinal&list"
+                    }
+                }
+            ]
+        }]
+}

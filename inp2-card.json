@@ -1,0 +1,67 @@
+{
+    "type": "AdaptiveCard",
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.3",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "Unsign to sign",
+            "wrap": true,
+            "size": "Medium",
+            "weight": "Bolder"
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "Unsign to sign",
+                    "style": "positive",
+                    "data": {
+                        "callback_keyword": "unsign2sign"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "TextBlock",
+            "text": "Push total files to final folder",
+            "wrap": true,
+            "size": "Medium",
+            "weight": "Bolder"
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "Push total files to final",
+                    "style": "positive",
+                    "data": {
+                        "callback_keyword": "pushtotaltofinal"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "TextBlock",
+            "text": "Push final folder to corona",
+            "wrap": true,
+            "size": "Medium",
+            "weight": "Bolder"
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "Push to Corona",
+                    "style": "positive",
+                    "data": {
+                        "callback_keyword": "pushtocorona"
+                    }
+                }
+            ]
+        }
+    ]
+}
